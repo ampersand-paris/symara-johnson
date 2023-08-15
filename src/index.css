@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  /* === Colors === */
+  --bright-yellow: #FAE909;
+  --main-red: #FA0909;
+  --mustard: #FFC700;
+  --acid-lim: #2CB32A;
+  --bubblegum: #FF709B;
+  --blue-blue: #008DFF;
+
+  /* === AppHeight === */
+  --app-height: 100%;
+}
+
+.about-wrapper {
+  background-size: cover;
+  background-repeat: none;
+  height: var(--app-height);
+  overflow: scroll;
+}
+
+.about-wrapper h1, p{
+  color: var(--bright-yellow);
+  width: 40%;
+}
