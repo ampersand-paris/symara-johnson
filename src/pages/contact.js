@@ -8,13 +8,20 @@ import useFetch from "../useFetch";
 
 const Contact = () => {
 
-    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/about?populate=*`)
+    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/contact-quotes?populate=*`)
 
-    let contact = [];
+    console.log(data)
+    let rand = null; 
+    let quote = []
 
     if (data) {
-        contact = data.data.attributes
-        console.log(contact)
+        
+        rand = Math.floor(Math.random() * data.data.length) 
+
+        quote = data.data[rand]
+
+        console.log(rand)
+        console.log(quote)
         // style={{backgroundImage: about.Background_Image}}
         return (
             <div className="contact-wrapper">
@@ -69,7 +76,7 @@ const Contact = () => {
                                                 <input placeholder="Email" required="true"></input>
                                                 <input placeholder="Phone"></input>
                                             </div>
-                                            <textarea placeholder="Why you so obsessed with me?"></textarea>
+                                            <textarea placeholder={quote.attributes.Quote}></textarea>
                                             <div className="button-wrapper">
                                                 <button>Submit</button>
                                             </div>
