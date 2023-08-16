@@ -1,7 +1,13 @@
 @font-face {
   font-family: "Uncut Sans";   /*Can be any text*/
-  src: local("Party"),
+  src: local("Uncut Sans"),
     url("./fonts/Uncut-Sans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Base Neue";   /*Can be any text*/
+  src: local("Base Neue"),
+    url("./fonts/BaseNeueTrial-Black.otf") format("opentype");
 }
 
 body {
@@ -13,9 +19,10 @@ body {
   --bright-yellow: #FAE909;
   --main-red: #FA0909;
   --mustard: #FFC700;
-  --acid-lim: #2CB32A;
+  --acid-lime: #2CB32A;
   --bubblegum: #FF709B;
   --blue-blue: #008DFF;
+  --sand: #E6DECE;
 
   /* === AppHeight === */
   --app-height: 100%;
@@ -52,7 +59,7 @@ p {
   padding-top: calc(var(--app-height) / 2);
   padding-bottom: calc(var(--app-height) / 3);
   padding-left: 150px;
-  width: 100vW;
+
   z-index: 10;
 }
 
@@ -92,4 +99,173 @@ p {
   position: relative;
   width: 300px;
   z-index: 999;
+}
+
+/* === Contact === */
+
+.contact-wrapper {
+  background-color: var(--acid-lime);
+  display: flex;
+  justify-content: flex-end;
+  min-height: var(--app-height);
+}
+
+.blue-wrapper {
+  background-color: var(--blue-blue);
+  border: 5px solid black;
+  border-radius: 30px;
+  display: flex;
+  height: auto;
+  margin: 20px;
+  width: calc(100vW - 300px);
+}
+
+.yellow-wrapper {
+  background-color: var(--bright-yellow);
+  border-radius: 30px;
+  display: flex;
+  height: auto;
+  margin: 20px;
+  width: 100%;
+}
+
+.sand-wrapper {
+  background-color: var(--sand);
+  border-radius: 30px;
+  display: flex;
+  height: auto;
+  margin: 20px;
+  width: 100%;
+}
+
+.pink-gradient {
+  background: linear-gradient(30deg, var(--bubblegum) 0%, transparent 40%);
+  border-radius: 30px;
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
+#symara-logo-contact {
+  height: auto;
+  width: 300px;
+  z-index: 999;
+}
+
+.logo-and-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.logo-and-title h1 {
+  color: var(--bubblegum);
+  font-weight: 800;
+  font-size: 3em;
+  margin: 10px;
+}
+
+.contact-form-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  max-width: 600px;
+  width: 60%;
+}
+
+.success-form-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  max-width: 600px;
+  width: 60%;
+}
+
+.success-form-wrapper p {
+  color: var(--main-red);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  background: linear-gradient(0deg, var(--bubblegum) 0%, rgba(255, 112, 155, .75) 10%, var(--sand) 90%);
+  border: 1px solid var(--bubblegum);
+  color: var(--main-red);
+  font-family: "Uncut Sans";
+  padding: 10px 5px;
+  width: 250px;
+}
+
+input::placeholder {
+  color: var(--main-red);
+  font-family: "Uncut Sans";
+}
+
+input:focus {
+  border-bottom: 2px solid var(--main-red);
+  outline: none;
+}
+
+textarea {
+  background: linear-gradient(0deg, var(--bubblegum) 0%, rgba(255, 112, 155, .75) 10%, var(--sand) 90%);
+  border: 1px solid var(--bubblegum);
+  color: var(--main-red);
+  font-family: "Uncut Sans";
+  height: 200px;
+  margin: 15px 0px;
+  padding: 10px 5px;
+  resize: none;
+  width: auto;
+}
+
+textarea::placeholder {
+  color: var(--main-red);
+  font-family: "Uncut Sans";
+}
+
+textarea:focus {
+  border-bottom: 2px solid var(--main-red);
+  outline: none;
+}
+
+.text-input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+  margin: 15px 0px;
+}
+
+button {
+  background: radial-gradient(var(--sand),  rgba(255, 112, 155, .75));
+  border: 2px solid var(--bubblegum);
+  border-radius: 40px;
+  color: var(--main-red);
+  cursor: pointer;
+  font-family: "Base Neue";
+  font-size: 1em;
+  letter-spacing: 3px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  transition-duration: 300ms;
+  width: 200px;
+}
+
+button:hover {
+  background: radial-gradient(var(--bubblegum),  rgba(255, 112, 155, 1));
+  color: var(--sand);
+  transition-duration: 300ms;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
 }
