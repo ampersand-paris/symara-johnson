@@ -8,7 +8,7 @@ import useFetch from "../useFetch";
 
 const Contact = () => {
 
-    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/contact-quotes?populate=*`)
+    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/contact-quotes?populate=*`)
 
     const [first, setFirst] = useState('');
     const [last, setLast] = useState('');
