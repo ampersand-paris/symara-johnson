@@ -176,6 +176,19 @@ p {
   width: 60%;
 }
 
+.success-form-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  max-width: 600px;
+  width: 60%;
+}
+
+.success-form-wrapper p {
+  color: var(--main-red);
+}
+
 form {
   display: flex;
   flex-direction: column;
