@@ -8,7 +8,7 @@ import useFetch from "../useFetch";
 
 const About = () => {
 
-    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}api/about?populate=*`)
+    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/about?populate=*`)
     const [backgroud, setBackground] = useState(' ');
 
     let about = [];
@@ -17,8 +17,7 @@ const About = () => {
     if (data) {
         about = data.data.attributes
         image = data.data.attributes.Background_Image.data[0].attributes.url
-        console.log(image)
-        // style={{backgroundImage: about.Background_Image}}
+
         return (
             <div className="about-wrapper" style={{backgroundImage: `url(http://localhost:1337${image})`}}>
                <svg id="symara-logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 358.87 127.7">

@@ -5,9 +5,21 @@
 }
 
 @font-face {
+  font-family: "Uncut Sans Bold";   /*Can be any text*/
+  src: local("Uncut Sans"),
+    url("./fonts/Uncut-Sans-Bold.otf") format("opentype");
+}
+
+@font-face {
   font-family: "Base Neue";   /*Can be any text*/
   src: local("Base Neue"),
     url("./fonts/BaseNeueTrial-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Blankscript";   /*Can be any text*/
+  src: local("Blankscript"),
+    url("./fonts/Blanksscript.otf") format("opentype");
 }
 
 body {
@@ -40,6 +52,12 @@ h2 {
   font-family: cabazon, serif;
   font-weight: 400;
   font-style: normal;
+}
+
+h4 {
+  font-family: "Cabazon";
+  font-size: 1em;
+  margin: 0;
 }
 
 p {
@@ -268,4 +286,165 @@ button:hover {
 .button-wrapper {
   display: flex;
   justify-content: center;
+}
+
+/* === Projects === */
+
+.projects-wrapper {
+  background-color: var(--mustard);
+  height: var(--app-height);
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  width: 100%;
+}
+
+.projects-wrapper h1, h2, h3, h4, h5, h6, p {
+  color: var(--main-red);
+}
+
+.image-wrapper { 
+  background-size: cover;
+  display: flex;
+  height: 80vH;
+  position: relative;
+  width: 100vW;
+}  
+
+
+.image-wrapper h1 { 
+  color: var(--bright-yellow);
+  font-family: "Blankscript";
+  font-size: 5em;
+  margin-left: 175px;
+  margin-bottom: 0px;
+}
+
+.image-wrapper h2 { 
+  color: var(--bright-yellow);
+  font-family: "Superclarendon";
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.title-year-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.project-information {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 175px;
+}
+
+.project-information h3 {
+  font-family: "Cabazon";
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.description-premier-container {
+  width: 50%;
+}
+
+.description-premier-container ul {
+  color: var(--main-red);
+  font-family: "Uncut Sans Bold";
+  padding: 0;
+  list-style: none;
+}
+
+.credits-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.creditee {
+  font-family: "Superclarendon";
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.watch {
+  bottom: -40px;
+  right: 150px;
+  text-decoration: none;
+  position: absolute;
+}
+
+.watch h1 {
+  color: var(--main-red);
+  font-family: "Base Neue";
+  transition-duration: 300ms;
+}
+
+.watch h1:hover {
+  color: var(--bright-yellow);
+  font-family: "Base Neue";
+  transition-duration: 300ms;
+}
+
+.red-bar {
+  background-color: var(--main-red);
+  height: 30px;
+  width: 100%;
+}
+
+.press-container {
+  padding: 30px 175px;
+}
+
+.project {
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.project-list {
+  display: flex;
+  column-gap: 20px;  
+}
+
+.press-card {
+  background-color: var(--sand);
+  border: 2px solid var(--main-red);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--main-red);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  row-gap: 20px;
+  text-decoration: none;
+  transition-duration: 300ms;
+  width: 30%;
+}
+
+.press-card h2 {
+  font-family: "Uncut Sans Bold";
+  letter-spacing: 1px;
+
+}
+
+
+.press-card:hover {
+  background-color: var(--bright-yellow);
+  border: 2px solid var(--blue-blue);
+  box-shadow: 5px 5px 5px var(--blue-blue);
+  transition-duration: 300ms;
+}
+
+.press-details {
+  display: flex;
+}
+
+.press-details h3 {
+  font-family: "Uncut Sans";
+  font-size: 1em;
+  margin-right: 10px;
 }
