@@ -16,6 +16,7 @@ const Contact = () => {
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [submit, setSubmit] = useState(false)
+    const [placeholder, setPlaceholder] = useState('');
 
     let rand = null; 
     let quote = []
@@ -32,6 +33,7 @@ const Contact = () => {
                 Message: message,
             }
         }
+
 
         console.log(reviewObj)
         try {
@@ -62,7 +64,11 @@ const Contact = () => {
     }
     
     if (data) {
-        
+
+        rand = Math.floor(Math.random() * data.data.length) 
+        quote = data.data[rand]
+        console.log(quote)
+
         if(submit) {
             return(
                 <div className="contact-wrapper">
@@ -118,9 +124,6 @@ const Contact = () => {
             )
         } 
 
-        rand = Math.floor(Math.random() * data.data.length) 
-        quote = data.data[rand]
-
         return (
             <div className="contact-wrapper">
                 <div className="blue-wrapper">
@@ -174,7 +177,7 @@ const Contact = () => {
                                                 <input onChange={(e)=>setEmail(e.target.value)} placeholder="Email" type="email" name="Email" required="true"></input>
                                                 <input onChange={(e)=>setPhone(e.target.value)} placeholder="Phone" type="text" name="Phone_Number"></input>
                                             </div>
-                                            <textarea onChange={(e)=>setMessage(e.target.value)} placeholder={quote.attributes.Quote} name="Message" required="true"></textarea>
+                                            <textarea onChange={(e)=>setMessage(e.target.value)} placeholder={ placeholder } name="Message" required="true"></textarea>
                                             <div className="button-wrapper">
                                                 <button type="submit">Submit</button>
                                             </div>
