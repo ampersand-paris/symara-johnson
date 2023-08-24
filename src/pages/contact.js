@@ -35,7 +35,7 @@ const Contact = () => {
 
         console.log(reviewObj)
         try {
-            let res = await fetch(`${process.env.REACT_APP_BACKEND}api/contact-submissions`, {
+            let res = await fetch(`${process.env.REACT_APP_BACKEND}/api/contact-submissions`, {
                 method: "POST",
                 headers: {
                     Accept: "application/json",

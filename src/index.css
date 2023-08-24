@@ -65,43 +65,47 @@ p {
   font-size: 1em;
 }
 
-.about-wrapper {
+.about-wrapper {  
   background-size: cover;
   background-position: center;
   background-repeat: none;
   height: calc(var(--app-height));
+  width: calc(100vW - 250px);
+  overflow: hidden;
   position: relative;
 }
 
 .bio-artist-statement-container {
-  padding-top: calc(var(--app-height) / 2);
+  padding-top: calc(var(--app-height) / 3);
   padding-bottom: calc(var(--app-height) / 3);
   padding-left: 150px;
-
-  z-index: 10;
 }
 
 .bio-artist-statement {
-  width: 35%;
+  width: 50%;
 }
 
 .gradient {
   background: linear-gradient(30deg, #000 0%, transparent 60%);
-  height: var(--app-height);
+  height: calc(var(--app-height) - 100px);
   left: 0;
-  position: absolute;
+  position: relative;
   overflow: scroll;
   top: 0;
-  width: 100vW;
+  width: calc(100vW - 250px);
   z-index: 0;
-  -webkit-mask-image: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0));
+  -webkit-mask-image: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
   -webkit-mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: left top, left bottom;
 }
 
-.mask {
+.gradient::-webkit-scrollbar {
+  display: none;
+}
 
+.navigation-menu::-webkit-scrollbar {
+  display: none;
 }
 
 .about-wrapper h1, p{
@@ -114,9 +118,8 @@ p {
   margin-left: 150px;
   margin-top: 100px;
   height: auto;
-  position: relative;
   width: 300px;
-  z-index: 999;
+  z-index: 1;
 }
 
 /* === Contact === */
@@ -295,10 +298,14 @@ button:hover {
   height: var(--app-height);
   overflow-y: scroll;
   scroll-snap-type: y proximity;
-  width: 100%;
+  width: calc(100vW - 250px);
 }
 
-.projects-wrapper h1, h2, h3, h4, h5, h6, p {
+.projects-wrapper {
+  color: var(--main-red);
+}
+
+.projects-wrapper p {
   color: var(--main-red);
 }
 
@@ -307,7 +314,7 @@ button:hover {
   display: flex;
   height: 80vH;
   position: relative;
-  width: 100vW;
+  width: 100%;
 }  
 
 
@@ -315,7 +322,7 @@ button:hover {
   color: var(--bright-yellow);
   font-family: "Blankscript";
   font-size: 5em;
-  margin-left: 175px;
+  margin-left: 20px;
   margin-bottom: 0px;
 }
 
@@ -337,7 +344,7 @@ button:hover {
 .project-information {
   display: flex;
   justify-content: space-between;
-  padding: 10px 175px;
+  padding: 10px 20px;
 }
 
 .project-information h3 {
@@ -396,7 +403,7 @@ button:hover {
 }
 
 .press-container {
-  padding: 30px 175px;
+  padding: 30px 20px;
 }
 
 .project {
@@ -428,8 +435,13 @@ button:hover {
 .press-card h2 {
   font-family: "Uncut Sans Bold";
   letter-spacing: 1px;
-
+  color: var(--main-red);
 }
+
+.press-card h3 {
+  color: var(--main-red);
+}
+
 
 
 .press-card:hover {
@@ -447,4 +459,78 @@ button:hover {
   font-family: "Uncut Sans";
   font-size: 1em;
   margin-right: 10px;
+}
+
+/* === Menus === */
+
+.symara-menu {
+  align-items: center;
+  background-color: var(--main-red);
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  color: var(--bright-yellow);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: var(--app-height);
+  justify-content: center;
+  transition-duration: 300ms;
+  width: 117px;
+  z-index: 999;
+}
+
+.symara-menu:hover {
+  background-color: var(--bright-yellow);
+  color: var(--main-red);
+}
+
+.contact-menu {
+  align-items: center; 
+  background-color: var(--acid-lime);
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  color: var(--bright-yellow);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: var(--app-height);
+  justify-content: center;
+  transition-duration: 300ms;
+  width: 117px;
+}
+
+.contact-menu:hover {
+  background-color: var(--bright-yellow);
+  color: var(--acid-lime) !important;
+}
+
+.projects-menu {
+  align-items: center;
+  background-color: var(--mustard);
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  color: var(--main-red);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: var(--app-height);
+  justify-content: center;
+  transition-duration: 300ms;
+  width: 117px;
+}
+
+.projects-menu:hover {
+  background-color: var(--main-red);
+  color: var(--mustard);
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: var(--app-height);
+}
+
+.flex {
+  display: flex;
 }
