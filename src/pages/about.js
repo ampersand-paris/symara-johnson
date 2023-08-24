@@ -22,7 +22,7 @@ const About = () => {
 
         return (
             // <div className="flex">
-                <div className="about-wrapper" style={{backgroundImage: `url(http://localhost:1337${image})`}}>
+                <div className="about-wrapper" style={{backgroundImage: `url${process.env.REACT_APP_BACKEND}${image})`}}>
                 <svg id="symara-logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 358.87 127.7">
                         <defs>
                             <style>
