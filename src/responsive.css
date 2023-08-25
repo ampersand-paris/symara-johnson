@@ -65,7 +65,70 @@
         width: 200px;
         z-index: 1;
     }
+/* === Projects === */
 
+    .projects-wrapper {
+        width: calc(100vW - 150px);
+    }
+    
+    .title-year-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .project-information {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    .project-information h3 {
+        font-family: "Cabazon";
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    .description-premier-container {
+        width: 50%;
+    }
+    
+    .description-premier-container ul {
+        color: var(--main-red);
+        font-family: "Uncut Sans Bold";
+        padding: 0;
+        list-style: none;
+    }
+    
+    .credits-container {
+        width: 50%;
+    }
+    
+    .watch {
+        right: 75px;
+    }
+    
+    .red-bar {
+        background-color: var(--main-red);
+        height: 30px;
+        width: 100%;
+    }
+    
+    .press-container {
+        padding: 30px 20px;
+    }
+    
+    .press-card {
+        padding: 10px;
+        row-gap: 20px;
+        width: 30%;
+    }
+    
+    .press-details {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 /* === Menus === */
 
     .symara-menu {
@@ -187,5 +250,74 @@
         margin-top: 100px;
         width: 200px;
         z-index: 1;
+    }
+
+    /* === Projects === */
+
+    .projects-wrapper {
+        width: calc(100vW - 66px);
+    }
+    
+    .title-year-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .project-information {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    
+    .project-information h3 {
+        font-family: "Cabazon";
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    .description-premier-container {
+        width: auto;
+    }
+    
+    .description-premier-container ul {
+        color: var(--main-red);
+        font-family: "Uncut Sans Bold";
+        padding: 0;
+        list-style: none;
+    }
+    
+    .credits-container {
+        align-items: flex-start;
+        width: auto;
+    }
+    
+    .watch {
+        bottom: -30px;
+        right: 10px;
+    }
+
+    .watch h1{
+        font-size: 3em;
+    }
+    
+    .red-bar {
+        background-color: var(--main-red);
+        height: 30px;
+        width: 100%;
+    }
+    
+    .press-container {
+        padding: 30px 20px;
+    }
+    
+    .press-card {
+        padding: 10px;
+        row-gap: 20px;
+        width: 30%;
+    }
+    
+    .press-details {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
