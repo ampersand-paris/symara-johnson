@@ -65,6 +65,8 @@ p {
   font-size: 1em;
 }
 
+/* === About === */
+
 .about-wrapper {  
   background-size: cover;
   background-position: center;
@@ -554,6 +556,7 @@ button:hover {
   color: var(--main-red);
   font-family: "Uncut Sans Bold";
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .footer h3 {
@@ -567,12 +570,21 @@ button:hover {
 }
 
 .newsletter-form {
+  align-items: center;
+  align-content: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 20px;
   column-gap: 20px;
 }
 
+.newsletter-block {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
 
 .newsletter-form input {
   background: none;

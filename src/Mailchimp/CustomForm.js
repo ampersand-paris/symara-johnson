@@ -70,34 +70,38 @@ const CustomForm = ({ status, message, onValidated }) => {
 
             {status !== "success" ? (
                 <div className="newsletter-form">
-                    <input 
-                        label="First Name"
-                        onChange={e => setFirstName(e.target.value)}
-                        type="text"
-                        value={firstName}
-                        placeholder="First name"
-                    />
-                    <input 
-                        label="Last Name"
-                        onChange={e => setLastName(e.target.value)}
-                        type="text"
-                        value={lastName}
-                        placeholder="Last name"
-                    />
-                    <input 
-                        label="Email"
-                        onChange={e => setEmail(e.target.value)}
-                        type="email"
-                        value={email}
-                        placeholder="Email"
-                        isRequired
-                    />
-                    <input 
-                        className="subscribe-bttn"
-                        label="Subscribe"
-                        type="submit"
-                        formValues={[email, firstName, lastName]}
-                    />
+                    <div className="newsletter-block">
+                        <input 
+                            label="First Name"
+                            onChange={e => setFirstName(e.target.value)}
+                            type="text"
+                            value={firstName}
+                            placeholder="First name"
+                        />
+                        <input 
+                            label="Last Name"
+                            onChange={e => setLastName(e.target.value)}
+                            type="text"
+                            value={lastName}
+                            placeholder="Last name"
+                        />
+                    </div>
+                    <div className="newsletter-block">
+                        <input 
+                            label="Email"
+                            onChange={e => setEmail(e.target.value)}
+                            type="email"
+                            value={email}
+                            placeholder="Email"
+                            isRequired
+                        />
+                        <input 
+                            className="subscribe-bttn"
+                            label="Subscribe"
+                            type="submit"
+                            formValues={[email, firstName, lastName]}
+                        />
+                    </div>
                 </div>
             ) : null}
         </form>
