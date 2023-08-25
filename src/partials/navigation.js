@@ -9,6 +9,7 @@ import ContactMenu from "./contact";
 import ProjectsMenu from "./projects";
 import Symara from "./symara";
 import About from "../pages/about";
+import Footer from "./footer";
 
 const Navigation = () => {
 
@@ -21,9 +22,13 @@ const Navigation = () => {
     }
 
     return (
-        <div className="navigation-menu" style={{ justifyContent: flex }}>
-            {order}
-        </div>                  
+        <>        
+            <div className="navigation-menu" style={{ justifyContent: flex }}>
+                {order}
+            </div>  
+            <Footer />   
+        </>
+             
         )
     }
 

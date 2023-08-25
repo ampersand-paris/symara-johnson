@@ -1,0 +1,191 @@
+@media only screen and (max-width: 1000px) {
+    
+    /* === Fonts === */
+
+    h1 {
+        font-family: superclarendon, serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    h2 {
+        font-family: cabazon, serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    h4 {
+        font-family: "Cabazon";
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    p {
+        font-family: "Uncut Sans";
+        font-size: 1em;
+    }
+
+    /* === About === */
+
+    .about-wrapper {  
+        width: calc(100vW - 150px);
+    }
+      
+    .bio-artist-statement-container {
+        padding-top: calc(var(--app-height) / 3);
+        padding-bottom: calc(var(--app-height) / 3);
+        padding-left: 100px;
+    }
+      
+    .bio-artist-statement {
+        width: 75%;
+    }
+      
+    .gradient {
+        width: calc(100vW - 150px);
+    }
+      
+    .gradient::-webkit-scrollbar {
+        display: none;
+    }
+      
+    .navigation-menu::-webkit-scrollbar {
+        display: none;
+    }
+      
+    .about-wrapper h1, p{
+        color: var(--bright-yellow);
+        position: relative;
+        
+    }
+      
+    #symara-logo {
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 200px;
+        z-index: 1;
+    }
+
+/* === Menus === */
+
+    .symara-menu {
+        border-left-width: 2px;
+        border-right-width: 2px;
+        width: 75px;
+    }
+
+    .symara-menu h1 {
+        font-size: 1.5em;
+    }
+      
+    .contact-menu {
+        border-left-width: 2px;
+        border-right-width: 2px;
+        width: 75px;
+    }
+
+    .contact-menu h1 {
+        font-size: 1.5em;
+    }
+      
+    .projects-menu { 
+        border-left-width: 2px;
+        border-right-width: 2px;
+        width: 75px;
+    }
+
+    .projects-menu h1 {
+        font-size: 1.5em;
+    }
+
+/* === Footer === */
+
+    .footer {
+        align-items: center;
+        border-width: 3px;
+        justify-content: center;
+    }
+    
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .newsletter-block {
+        flex-direction: column;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    /* === Menus === */
+
+    .symara-menu {
+        width: 33px;
+    }
+
+    .symara-menu h1 {
+        font-size: 1em;
+    }
+    
+    .contact-menu {
+        width: 33px;
+    }
+
+    .contact-menu h1 {
+        font-size: 1em;
+    }
+    
+    .projects-menu { 
+        width: 33px;
+    }
+
+    .projects-menu h1 {
+        font-size: 1em;
+    }
+
+    /* === About === */
+
+    .about-wrapper {  
+        width: calc(100vW - 66px);
+    }
+      
+    .bio-artist-statement-container {
+        padding-top: calc(var(--app-height) / 3);
+        padding-bottom: calc(var(--app-height) / 3);
+        padding-left: 10px;
+    }
+      
+    .bio-artist-statement {
+        width: 75%;
+    }
+      
+    .gradient {
+        width: calc(100vW - 66px);
+    }
+      
+    .gradient::-webkit-scrollbar {
+        display: none;
+    }
+      
+    .navigation-menu::-webkit-scrollbar {
+        display: none;
+    }
+      
+    .about-wrapper h1, p{
+        color: var(--bright-yellow);
+        position: relative;
+        
+    }
+      
+    #symara-logo {
+        margin-left: 10px;
+        margin-top: 100px;
+        width: 200px;
+        z-index: 1;
+    }
+}
