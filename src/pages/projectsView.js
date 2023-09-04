@@ -21,7 +21,7 @@ const ProjectsView = () => {
             <div className="projects-wrapper">
                 {projects.map((project) => 
                     <div className="project">
-                        <div className="image-wrapper" style={{backgroundImage:`url(${process.env.REACT_APP_BACKEND}${project.attributes.Project_Image.data[0].attributes.url})`}}>
+                        <div className="image-wrapper" style={{backgroundImage:`url(${project.attributes.Project_Image.data[0].attributes.url})`}}>
                             <div className="title-year-container">
                                 <h1>{project.attributes.Title}</h1>
                                 <h2>({project.attributes.Year})</h2>
