@@ -306,6 +306,14 @@ button:hover {
   width: calc(100vW - 250px);
 }
 
+.projects-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .projects-wrapper p {
   color: var(--main-red);
 }
@@ -657,4 +665,8 @@ textarea:focus {
   border-color: var(--blue-blue) !important;
   color: var(--mustard) !important;
   transition-duration: 300ms;
+}
+
+.contact-link {
+  text-decoration: none;
 }
