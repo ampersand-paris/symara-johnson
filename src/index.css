@@ -16,12 +16,6 @@
     url("./fonts/BaseNeueTrial-Black.otf") format("opentype");
 }
 
-@font-face {
-  font-family: "Blankscript";   /*Can be any text*/
-  src: local("Blankscript"),
-    url("./fonts/Blanksscript.otf") format("opentype");
-}
-
 body {
   background-color: var(--sand);
   margin: 0;
@@ -180,7 +174,7 @@ p {
 #symara-logo-contact {
   height: auto;
   width: 300px;
-  z-index: 999;
+  z-index: 2;
 }
 
 .logo-and-title {
@@ -336,7 +330,9 @@ button:hover {
 
 .image-wrapper h1 { 
   color: var(--bright-yellow);
-  font-family: "Blankscript";
+  font-family: "casey", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 5em;
   margin-left: 20px;
   margin-bottom: 0px;
@@ -496,6 +492,7 @@ button:hover {
   flex-direction: column;
   height: var(--app-height);
   justify-content: center;
+  overflow: hidden;
   transition: background-color 300ms;
   transition: width 300ms;
   width: 117px;
@@ -522,6 +519,8 @@ button:hover {
   transition: background-color 300ms;
   transition: width 300ms;
   width: 117px;
+  z-index: 999;
+
 }
 
 .contact-menu:hover {
@@ -540,9 +539,11 @@ button:hover {
   flex-direction: column;
   height: var(--app-height);
   justify-content: center;
+  overflow: hidden;
   transition: background-color 300ms;
   transition: width 300ms;
   width: 117px;
+  z-index: 999;
 }
 
 .projects-menu:hover {
