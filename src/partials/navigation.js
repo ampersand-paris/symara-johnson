@@ -10,16 +10,18 @@ import ProjectsMenu from "./projects";
 import Symara from "./symara";
 import About from "../pages/about";
 import Footer from "./footer";
+import ProjectsView from "../pages/projectsView";
+import Contact from "../pages/contact";
 
-const Navigation = () => {
+const Navigation = (props) => {
 
-    const [flex, setFlex] = useState('flex-end');
-    const [order, setOrder] = useState(<div className="navigation-menu" style={{ justifyContent: flex }}>
-    <About /><ProjectsMenu ContactMenu handleCallBack={callBack}/><ContactMenu handleCallBack={callBack} /></div>);
+    const [flex, setFlex] = useState('space-between');
+    const [order, setOrder] = useState(props.order);
 
     function callBack(arg) {
         setOrder(arg)
     }
+
 
     return (
         <>        

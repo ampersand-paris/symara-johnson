@@ -181,6 +181,11 @@
         row-gap: 20px;
         column-gap: 20px;
     }
+
+    iframe {
+        width: calc(100vW - 150px);
+        height: calc((100vW - 150px) * .5625);
+    }
     
 }
 
@@ -320,4 +325,9 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    iframe {
+        width: calc(100vW - 66px);
+        height: calc((100vW - 66px) * .5625);
+      }
 }
