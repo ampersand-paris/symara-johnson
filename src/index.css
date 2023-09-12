@@ -23,6 +23,7 @@
 }
 
 body {
+  background-color: var(--sand);
   margin: 0;
 }
 
@@ -68,18 +69,24 @@ p {
 /* === About === */
 
 .about-wrapper {  
+  background-color: var(--mustard);
   background-size: cover;
   background-position: center;
   background-repeat: none;
   height: calc(var(--app-height));
   width: calc(100vW - 250px);
-  overflow: hidden;
+  overflow: scroll;
   position: relative;
+  transition: width 300ms;
+}
+
+.about-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .bio-artist-statement-container {
   padding-top: calc(var(--app-height) / 3);
-  padding-bottom: calc(var(--app-height) / 3);
+  padding-bottom: calc(var(--app-height) / 5);
   padding-left: 150px;
 }
 
@@ -131,6 +138,7 @@ p {
   display: flex;
   justify-content: flex-end;
   min-height: var(--app-height);
+  transition: width 300ms;
 }
 
 .blue-wrapper {
@@ -489,6 +497,7 @@ button:hover {
   height: var(--app-height);
   justify-content: center;
   transition: background-color 300ms;
+  transition: width 300ms;
   width: 117px;
   z-index: 999;
 }
@@ -509,7 +518,9 @@ button:hover {
   flex-direction: column;
   height: var(--app-height);
   justify-content: center;
+  overflow: hidden;
   transition: background-color 300ms;
+  transition: width 300ms;
   width: 117px;
 }
 
@@ -530,6 +541,7 @@ button:hover {
   height: var(--app-height);
   justify-content: center;
   transition: background-color 300ms;
+  transition: width 300ms;
   width: 117px;
 }
 
@@ -669,4 +681,11 @@ textarea:focus {
 
 .contact-link {
   text-decoration: none;
+}
+
+iframe {
+  border: solid black 5px;
+  width: calc(100vW - 256px);
+  height: calc((100vW - 250px) * .5625);
+  margin-bottom: 20vH;
 }

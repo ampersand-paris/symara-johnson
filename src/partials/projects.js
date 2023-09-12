@@ -10,11 +10,12 @@ import ContactMenu from "./contact";
 import ProjectsView from "../pages/projectsView";
 
 const ProjectsMenu = (props) => {
-    
+
     return (
-        <a className="contact-link" href="/projects"> 
-            <div onClick={() => props.handleCallBack(<div className="navigation-menu">
-                <Symara handleCallBack={props.handleCallBack} /><ProjectsView /><ContactMenu handleCallBack={props.handleCallBack}/></div>)} className="projects-menu">
+            <div onClick={() => { props.handleCallBack(<div className="navigation-menu">
+                <Symara handleCallBack={props.handleCallBack} /><ProjectsView /><ContactMenu handleCallBack={props.handleCallBack}/></div>);
+                props.menuTransition(props.bigger, props.small, props.small2) }
+                } className="projects-menu">
                 <h1>P</h1>
                 <h1>R</h1>
                 <h1>O</h1>
@@ -24,7 +25,7 @@ const ProjectsMenu = (props) => {
                 <h1>T</h1>
                 <h1>S</h1>
             </div>       
-        </a>           
+                
         )
     }
 

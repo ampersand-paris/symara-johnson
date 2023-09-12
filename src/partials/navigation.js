@@ -15,12 +15,13 @@ import Contact from "../pages/contact";
 
 const Navigation = (props) => {
 
-    const [flex, setFlex] = useState('flex-end');
+    const [flex, setFlex] = useState('space-between');
     const [order, setOrder] = useState(props.order);
 
     function callBack(arg) {
         setOrder(arg)
     }
+
 
     return (
         <>        

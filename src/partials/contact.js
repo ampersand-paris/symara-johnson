@@ -15,9 +15,10 @@ const ContactMenu = (props) => {
     
 
     return (
-        <a className="contact-link" href="/contact">
-            <div onClick={() => props.handleCallBack(<div className="navigation-menu">
-            <Symara handleCallBack={props.handleCallBack} /><ProjectsMenu handleCallBack={props.handleCallBack} /><Contact /></div>)} className="contact-menu">
+            <div onClick={() => 
+                { props.handleCallBack(<div className="navigation-menu">
+                <Symara handleCallBack={props.handleCallBack} /><ProjectsMenu handleCallBack={props.handleCallBack} /><Contact /></div>);
+                props.menuTransition(props.bigger, props.small, props.small2)  }} className="contact-menu">
                 <h1>C</h1>
                 <h1>O</h1>
                 <h1>N</h1>
@@ -26,7 +27,7 @@ const ContactMenu = (props) => {
                 <h1>C</h1>
                 <h1>T</h1>
             </div>    
-        </a>              
+        
         )
     }
 
