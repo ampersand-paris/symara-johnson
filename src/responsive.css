@@ -144,7 +144,6 @@
     }
       
     .contact-wrapper {
-        justify-content: center;
         width: calc(100vW - 150px);
     }
 
@@ -214,6 +213,7 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        height: calc(var(--app-height) - 104px);
         margin: 0px;
         width: auto;
     }
