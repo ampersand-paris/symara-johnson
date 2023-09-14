@@ -64,9 +64,8 @@ const About = () => {
                                 </div>
                         </div>
                         <iframe src={`${about.Reel}`} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-
+                        <Footer />
                     </div>
-
                 </div>
         )
     }

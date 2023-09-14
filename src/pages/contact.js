@@ -5,7 +5,7 @@ import { Link, Routes, Route } from "react-router-dom";
 
 // Components
 import useFetch from "../useFetch";
-
+import Footer from "../partials/footer";
 const Contact = () => {
 
     const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/contact-quotes?populate=*`)
@@ -172,8 +172,9 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>    
-                    </div>     
-            </div>                  
+                    </div>
+                <Footer />     
+            </div>        
         )
     }
     

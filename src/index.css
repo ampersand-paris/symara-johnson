@@ -149,9 +149,9 @@ p {
   opacity: 0;
   overflow: scroll;
   background-color: var(--acid-lime);
-  height: fit-content;
+  height: var(--app-height);
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   min-height: var(--app-height);
   transition: width 300ms;
   width: calc(100vW - 250px);
@@ -162,7 +162,6 @@ p {
   border: 5px solid black;
   border-radius: 30px;
   display: flex;
-  height: auto;
   margin: 20px;
   width: calc(100vW - 300px);
 }
@@ -171,7 +170,6 @@ p {
   background-color: var(--bright-yellow);
   border-radius: 30px;
   display: flex;
-  height: auto;
   margin: 20px;
   width: 100%;
 }
@@ -180,7 +178,6 @@ p {
   background-color: var(--sand);
   border-radius: 30px;
   display: flex;
-  height: auto;
   margin: 20px;
   width: 100%;
 }
@@ -188,7 +185,6 @@ p {
 .pink-gradient {
   background: linear-gradient(30deg, var(--bubblegum) 0%, transparent 40%);
   border-radius: 30px;
-  height: auto;
   padding: 20px;
   width: 100%;
 }
@@ -219,6 +215,7 @@ p {
   align-content: center;
   margin: 40px;
   max-width: 600px;
+  height: calc(var(--app-height) - 250px);
   width: 60%;
 }
 
@@ -244,7 +241,9 @@ form {
 input {
   background: linear-gradient(0deg, var(--bubblegum) 0%, rgba(255, 112, 155, .75) 10%, var(--sand) 90%);
   border: 1px solid var(--bubblegum);
+  box-sizing: border-box;
   border-radius: 3px;
+  height: 40px;
   color: var(--main-red);
   font-family: "Uncut Sans";
   padding: 10px 5px;
@@ -257,7 +256,7 @@ input::placeholder {
 }
 
 input:focus {
-  border-bottom: 2px solid var(--main-red);
+  border-bottom: 3px solid var(--main-red);
   outline: none;
 }
 
@@ -602,10 +601,11 @@ button:hover {
 .footer {
   align-items: center;
   background-color: var(--mustard);
-  border: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   justify-content: center;
   padding: 30px;
   position: relative;
@@ -664,7 +664,7 @@ input::placeholder {
   font-family: "Uncut Sans";
 }
 
-input:focus {
+.newsletter-form input:focus {
   border-bottom: 3px solid var(--blue-blue);
   color: var(--blue-blue);
   outline: none;
@@ -673,6 +673,7 @@ input:focus {
 textarea {
   background: linear-gradient(0deg, var(--bubblegum) 0%, rgba(255, 112, 155, .75) 10%, var(--sand) 90%);
   border: 1px solid var(--bubblegum);
+  box-sizing: border-box;
   color: var(--main-red);
   font-family: "Uncut Sans";
   height: 200px;
@@ -688,7 +689,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  border-bottom: 2px solid var(--main-red);
+  border-bottom: 3px solid var(--main-red);
   outline: none;
 }
 

@@ -6,6 +6,7 @@ import ReachMarkdown from 'react-markdown';
 
 // Components
 import useFetch from "../useFetch";
+import Footer from "../partials/footer";
 
 const ProjectsView = () => {
 
@@ -67,6 +68,7 @@ const ProjectsView = () => {
                         </div>
                     </div>
                 )}
+            <Footer />
             </div>                  
         )
     }

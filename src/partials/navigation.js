@@ -28,7 +28,6 @@ const Navigation = (props) => {
             <div className="navigation-menu" style={{ justifyContent: flex }}>
                 {order}
             </div>  
-            <Footer />   
         </>
              
         )
