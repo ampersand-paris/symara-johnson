@@ -147,7 +147,9 @@ p {
   animation-fill-mode: forwards;
   animation-delay: .5s;
   opacity: 0;
+  overflow: scroll;
   background-color: var(--acid-lime);
+  height: fit-content;
   display: flex;
   justify-content: flex-end;
   min-height: var(--app-height);
@@ -186,36 +188,35 @@ p {
 .pink-gradient {
   background: linear-gradient(30deg, var(--bubblegum) 0%, transparent 40%);
   border-radius: 30px;
-  display: flex;
   height: auto;
+  padding: 20px;
   width: 100%;
 }
 
 #symara-logo-contact {
   height: auto;
-  width: 300px;
+  width: 200px;
   z-index: 2;
 }
 
 .logo-and-title {
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
 }
 
-.logo-and-title h1 {
+.logo-and-title > h1 {
   color: var(--bubblegum);
   font-weight: 800;
-  font-size: 3em;
-  margin: 10px;
+  font-size: 2.5em;
+  margin: 10px 10px 10px 0px;
 }
 
 .contact-form-wrapper {
-  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   margin: 40px;
   max-width: 600px;
   width: 60%;
