@@ -47,7 +47,7 @@ function App() {
         slug = '/contact'
       }
 
-      let url = `http://localhost:3000${slug}`
+      let url = `${process.env.REACT_APP_FRONTEND}${slug}`
       window.location.href = url
     }, 400); 
 }
