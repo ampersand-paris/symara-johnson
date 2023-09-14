@@ -141,11 +141,105 @@
         font-size: 1.5em;
     }
       
+    .contact-wrapper {
+        justify-content: center;
+        width: calc(100vW - 150px);
+    }
+
+
+    .blue-wrapper {
+        border: 2px solid black;
+        border-radius: 30px;
+        display: flex;
+        height: auto;
+        width: 100%;
+        margin: 10px;
+        width: calc(100vW - 150px);
+    }
+    
+    .yellow-wrapper {
+        background-color: var(--bright-yellow);
+        border-radius: 30px;
+        display: flex;
+        height: auto;
+        margin: 10px;
+        width: calc(100vW - 200px);
+    }
+    
+    .sand-wrapper {
+        background-color: var(--sand);
+        border-radius: 30px;
+        display: flex;
+        height: auto;
+        margin: 10px;
+        width: calc(100vW - 220px);
+    }
+    
+    .pink-gradient {
+        background: linear-gradient(30deg, var(--bubblegum) 0%, transparent 40%);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+        padding: 20px;
+        width: calc(100vW - 240px);
+    }
+    
+    #symara-logo-contact {
+        height: auto;
+        width: 125px;
+        z-index: 2;
+    }
+
+    .logo-and-title {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px 0px;
+        width: 100%;
+    }
+
+
+    .logo-and-title > h1 {
+        font-size: 1.5em;
+        margin-left: 0px;
+    }
+
+    .contact-form-wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        width: auto;
+    }
+
+    .text-input-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 15px;
+        margin: 15px 0px 0px 0px;
+        width: auto;
+      }
+
     .contact-menu {
         border-left-width: 2px;
         border-right-width: 2px;
         width: 75px;
     }
+
+    input {
+        background: linear-gradient(0deg, var(--bubblegum) 0%, rgba(255, 112, 155, .75) 10%, var(--sand) 90%);
+        border: 1px solid var(--bubblegum);
+        border-radius: 3px;
+        color: var(--main-red);
+        font-family: "Uncut Sans";
+        padding: 10px 5px;
+        width: 100%;
+      }
 
     .contact-menu h1 {
         font-size: 1.5em;
@@ -262,7 +356,27 @@
     .projects-wrapper {
         width: calc(100vW - 66px);
     }
+
+    .contact-wrapper {
+        width: calc(100vW - 70px);
+    }
     
+    .blue-wrapper {
+        width: calc(100vW - 96px);
+    }
+
+    .yellow-wrapper {
+        width: calc(100vW - 116px);
+    }
+
+    .sand-wrapper {
+        width: calc(100vW - 136px);
+    }
+
+    .pink-gradient {
+        width: calc(100vW - 136px);
+    }
+
     .title-year-container {
         display: flex;
         flex-direction: column;
