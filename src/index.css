@@ -21,6 +21,15 @@ body {
   margin: 0;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 :root {
   /* === Colors === */
   --bright-yellow: #FAE909;
@@ -63,6 +72,11 @@ p {
 /* === About === */
 
 .about-wrapper {  
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  opacity: 0;
   background-color: var(--mustard);
   background-size: cover;
   background-position: center;
@@ -128,11 +142,17 @@ p {
 /* === Contact === */
 
 .contact-wrapper {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  opacity: 0;
   background-color: var(--acid-lime);
   display: flex;
   justify-content: flex-end;
   min-height: var(--app-height);
   transition: width 300ms;
+  width: calc(100vW - 250px);
 }
 
 .blue-wrapper {
@@ -300,12 +320,18 @@ button:hover {
 /* === Projects === */
 
 .projects-wrapper {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  opacity: 0;
   background-color: var(--mustard);
   color: var(--main-red);
   height: var(--app-height);
   overflow-y: scroll;
   scroll-snap-type: y proximity;
   width: calc(100vW - 250px);
+  transition: width 300ms;
 }
 
 .projects-wrapper::-webkit-scrollbar {
@@ -482,6 +508,9 @@ button:hover {
 /* === Menus === */
 
 .symara-menu {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   align-items: center;
   background-color: var(--main-red);
   border-left: 4px solid black;
@@ -493,8 +522,8 @@ button:hover {
   height: var(--app-height);
   justify-content: center;
   overflow: hidden;
-  transition: background-color 300ms;
-  transition: width 300ms;
+  transition-property: background-color, width;
+  transition-duration: 300ms;
   width: 117px;
   z-index: 999;
 }
@@ -505,6 +534,9 @@ button:hover {
 }
 
 .contact-menu {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   align-items: center; 
   background-color: var(--acid-lime);
   border-left: 4px solid black;
@@ -516,8 +548,8 @@ button:hover {
   height: var(--app-height);
   justify-content: center;
   overflow: hidden;
-  transition: background-color 300ms;
-  transition: width 300ms;
+  transition-property: background-color, width;
+  transition-duration: 300ms;
   width: 117px;
   z-index: 999;
 
@@ -529,6 +561,9 @@ button:hover {
 }
 
 .projects-menu {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   align-items: center;
   background-color: var(--mustard);
   border-left: 4px solid black;
@@ -540,8 +575,8 @@ button:hover {
   height: var(--app-height);
   justify-content: center;
   overflow: hidden;
-  transition: background-color 300ms;
-  transition: width 300ms;
+  transition-property: background-color, width;
+  transition-duration: 300ms;
   width: 117px;
   z-index: 999;
 }
