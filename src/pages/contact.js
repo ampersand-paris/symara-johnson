@@ -51,6 +51,7 @@ const Contact = () => {
             let resJson = await res.json();
             if (res.status === 200) {
                 console.log('success')
+                setSubmit(true)
             } else {
                 console.log('error')
             }
