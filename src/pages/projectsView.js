@@ -7,12 +7,21 @@ import ReachMarkdown from 'react-markdown';
 // Components
 import useFetch from "../useFetch";
 import Footer from "../partials/footer";
+import IsLoading from "../partials/isLoading";
 
 const ProjectsView = () => {
 
     const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/projects?populate=*`)
 
     let projects = [];
+
+    if (isLoading) {
+        return (
+            <>
+                <IsLoading />
+            </>
+        )
+    }
 
     if (data) {
 

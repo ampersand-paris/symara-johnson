@@ -6,6 +6,8 @@ import { Link, Routes, Route } from "react-router-dom";
 // Components
 import useFetch from "../useFetch";
 import Footer from "../partials/footer";
+import IsLoading from "../partials/isLoading";
+
 const Contact = () => {
 
     const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/contact-quotes?populate=*`)
@@ -55,6 +57,14 @@ const Contact = () => {
         } catch (err) {
             console.log(err)
         }
+    }
+
+    if (isLoading) {
+        return (
+            <>
+                <IsLoading />
+            </>
+        )
     }
     
     if (data) {

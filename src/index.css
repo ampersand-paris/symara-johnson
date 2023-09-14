@@ -728,3 +728,18 @@ iframe {
   height: calc((100vW - 260px) * .5625);
   margin-bottom: 20vH;
 }
+
+.is-loading {
+  height: var(--app-height);
+  width: 100vW;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#symara-logo-loading {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  width: 300px;
+}
