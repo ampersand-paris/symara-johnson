@@ -17,6 +17,7 @@ const ProjectsView = () => {
 
         projects = data.data
         console.log(projects)
+
         return (
             <div className="projects-wrapper">
                 {projects.map((project) => 
@@ -42,22 +43,26 @@ const ProjectsView = () => {
                                 )}
                             </div>
                         </div>
-                        <div className="press-container">
-                            <h1>Press</h1>
-                            <div className="project-list">
-                                {project.attributes.press.data.map((press) => 
-                                   <a className="press-card" href={press.attributes.Link} target="_blank">
-                                            <h2 className="press-title">{press.attributes.Title}</h2>
-                                            <p>{press.attributes.Quote}</p>
-                                            <div className="press-details">
-                                                <h3>{press.attributes.Year}</h3>
-                                                <h3>{press.attributes.Publication}</h3>
-                                                <h3>{press.attributes.Author}</h3>
-                                            </div>
-                                    </a>
-                                )}
+                            <div>
+                                { project.attributes.press.data.length > 0 ? 
+                                    <div className="press-container">
+                                        <h1>Press</h1>
+                                        <div className="project-list">
+                                        { project.attributes.press.data.map((press) => 
+                                        <a className="press-card" href={press.attributes.Link} target="_blank">
+                                                    <h2 className="press-title">{press.attributes.Title}</h2>
+                                                    <p>{press.attributes.Quote}</p>
+                                                    <div className="press-details">
+                                                        <h3>{press.attributes.Year}</h3>
+                                                        <h3>{press.attributes.Publication}</h3>
+                                                        <h3>{press.attributes.Author}</h3>
+                                                    </div>
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+                                 : <div></div>}
                             </div>
-                        </div>
                         <div className="red-bar">
                         </div>
                     </div>
