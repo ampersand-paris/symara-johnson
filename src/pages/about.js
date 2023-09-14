@@ -63,8 +63,9 @@ const About = () => {
                                     <div className="hidden-div">
                                 </div>
                         </div>
+                        <iframe src={`${about.Reel}`} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
                     </div>
-                    <iframe src={`${about.Reel}`} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
         )

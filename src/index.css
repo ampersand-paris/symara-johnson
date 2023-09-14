@@ -723,7 +723,7 @@ textarea:focus {
 
 iframe {
   border: solid black 5px;
-  width: calc(100vW - 256px);
-  height: calc((100vW - 250px) * .5625);
+  width: calc(100vW - 260px);
+  height: calc((100vW - 260px) * .5625);
   margin-bottom: 20vH;
 }
