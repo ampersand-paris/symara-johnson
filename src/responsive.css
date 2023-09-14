@@ -35,6 +35,8 @@
         padding-top: calc(var(--app-height) / 3);
         padding-bottom: calc(var(--app-height) / 3);
         padding-left: 100px;
+        width: 80%;
+        margin-right: 0px;
     }
       
     .bio-artist-statement {
@@ -277,6 +279,7 @@
     }
 
     iframe {
+        border: solid black 2px;
         width: calc(100vW - 150px);
         height: calc((100vW - 150px) * .5625);
     }
@@ -313,7 +316,7 @@
     /* === About === */
 
     .about-wrapper {  
-        width: calc(100vW - 66px);
+        width: calc(100vW - 74px);
     }
       
     .bio-artist-statement-container {
@@ -327,7 +330,7 @@
     }
       
     .gradient {
-        width: calc(100vW - 66px);
+        width: calc(100vW - 74px);
     }
       
     .gradient::-webkit-scrollbar {
@@ -354,33 +357,41 @@
     /* === Projects === */
 
     .projects-wrapper {
-        width: calc(100vW - 66px);
+        width: calc(100vW - 74px);
     }
 
     .contact-wrapper {
-        width: calc(100vW - 70px);
+        width: calc(100vW - 74px);
     }
     
     .blue-wrapper {
-        width: calc(100vW - 96px);
+        width: calc(100vW - 98px);
     }
 
     .yellow-wrapper {
-        width: calc(100vW - 116px);
+        width: calc(100vW - 122px);
     }
 
     .sand-wrapper {
-        width: calc(100vW - 136px);
+        width: calc(100vW - 144px);
     }
 
     .pink-gradient {
-        width: calc(100vW - 136px);
+        width: calc(100vW - 144px);
     }
 
     .title-year-container {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    .title-year-container > h1 {
+        font-size: 2em;
+    }
+
+    .title-year-container > h2 {
+        font-size: 1.5em;
     }
     
     .project-information {
@@ -441,7 +452,7 @@
     }
 
     iframe {
-        width: calc(100vW - 66px);
-        height: calc((100vW - 66px) * .5625);
-      }
+        width: calc(100vW - 78px);
+        height: calc((100vW - 78px) * .5625);
+    }
 }
