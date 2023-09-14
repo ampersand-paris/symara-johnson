@@ -213,7 +213,7 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        height: calc(var(--app-height) - 104px);
+        height: auto;
         margin: 0px;
         width: auto;
     }
@@ -377,7 +377,7 @@
     }
 
     .pink-gradient {
-        width: calc(100vW - 144px);
+        width: calc(100vW - 164px);
     }
 
     .title-year-container {

@@ -8,6 +8,7 @@ import useFetch from "../useFetch";
 import ContactMenu from "../partials/contact";
 import ProjectsMenu from "../partials/projects";
 import Footer from "../partials/footer";
+import IsLoading from "../partials/isLoading";
 
 const About = () => {
 
@@ -17,10 +18,18 @@ const About = () => {
     let about = [];
     let image = [];
 
+    if (isLoading) {
+        return (
+            <>
+                <IsLoading />
+            </>
+        )
+    }
+    
     if (data) {
         about = data.data.attributes
         image = data.data.attributes.Background_Image.data[0].attributes.url
-        console.log(about)
+
         return (
                 <div className="about-wrapper" style={{backgroundImage: `url(${image})`}}>
                     <svg id="symara-logo" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.94 113.02">
