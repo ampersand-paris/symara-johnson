@@ -30,6 +30,18 @@ body {
    }
 }
 
+@keyframes fadeInAndOutAnimation {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+   }
+  100% {
+    opacity: 0;
+ }
+}
+
 :root {
   /* === Colors === */
   --bright-yellow: #FAE909;
@@ -93,7 +105,7 @@ p {
 }
 
 .bio-artist-statement-container {
-  padding-top: calc(var(--app-height) / 3);
+  padding-top: calc(var(--app-height) / 2);
   padding-bottom: calc(var(--app-height) / 5);
   padding-left: 150px;
 }
@@ -104,7 +116,7 @@ p {
 
 .gradient {
   background: linear-gradient(30deg, #000 0%, transparent 60%);
-  height: calc(var(--app-height) - 100px);
+  height: calc(var(--app-height));
   left: 0;
   position: relative;
   overflow: scroll;
@@ -132,6 +144,7 @@ p {
 }
 
 #symara-logo {
+  position: absolute;
   margin-left: 150px;
   margin-top: 100px;
   height: auto;
@@ -220,11 +233,13 @@ p {
 }
 
 .success-form-wrapper {
-  align-items: center;
+  align-content: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 40px;
   max-width: 600px;
+  height: calc(var(--app-height) - 250px);
   width: 60%;
 }
 
@@ -383,7 +398,7 @@ button:hover {
 .project-information {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 30px 20px;
   width: auto;
 
 }
@@ -414,10 +429,21 @@ button:hover {
   width: 30%;
 }
 
+.credit-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.credit {
+  width: 40%;
+}
+
 .creditee {
   font-family: "Superclarendon";
-  margin-left: 10px;
   text-transform: uppercase;
+  text-align: right;
+  width: 60%;
 }
 
 .watch {
@@ -426,6 +452,26 @@ button:hover {
   text-decoration: none;
   position: absolute;
 }
+
+.reel {
+  display: inline-block;
+  text-decoration: none;
+  
+}
+
+.reel h1 {
+  color: var(--main-red);
+  font-family: "Base Neue";
+  font-size: 5em;
+  transition-duration: 300ms;
+}
+
+.reel h1:hover {
+  color: var(--bright-yellow);
+  font-family: "Base Neue";
+  transition-duration: 300ms;
+}
+
 
 .watch h1 {
   color: var(--main-red);
@@ -731,15 +777,15 @@ iframe {
 
 .is-loading {
   height: var(--app-height);
-  width: 100vW;
+  width: calc(100vW - 250px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #symara-logo-loading {
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
+  animation: fadeInAndOutAnimation ease 3s;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   width: 300px;
 }
