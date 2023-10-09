@@ -321,12 +321,6 @@ button {
   width: 200px;
 }
 
-button:hover {
-  background: radial-gradient(var(--bubblegum),  rgba(255, 112, 155, 1));
-  color: var(--sand);
-  transition-duration: 300ms;
-}
-
 .button-wrapper {
   display: flex;
   justify-content: center;
@@ -466,21 +460,8 @@ button:hover {
   transition-duration: 300ms;
 }
 
-.reel h1:hover {
-  color: var(--bright-yellow);
-  font-family: "Base Neue";
-  transition-duration: 300ms;
-}
-
-
 .watch h1 {
   color: var(--main-red);
-  font-family: "Base Neue";
-  transition-duration: 300ms;
-}
-
-.watch h1:hover {
-  color: var(--bright-yellow);
   font-family: "Base Neue";
   transition-duration: 300ms;
 }
@@ -535,13 +516,6 @@ button:hover {
   color: var(--main-red);
 }
 
-.press-card:hover {
-  background-color: var(--bright-yellow);
-  border: 2px solid var(--blue-blue);
-  box-shadow: 5px 5px 5px var(--blue-blue);
-  transition-duration: 300ms;
-}
-
 .press-details {
   display: flex;
 }
@@ -575,11 +549,6 @@ button:hover {
   z-index: 999;
 }
 
-.symara-menu:hover {
-  background-color: var(--bright-yellow);
-  color: var(--main-red);
-}
-
 .contact-menu {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
@@ -602,11 +571,6 @@ button:hover {
 
 }
 
-.contact-menu:hover {
-  background-color: var(--bright-yellow);
-  color: var(--acid-lime) !important;
-}
-
 .projects-menu {
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
@@ -626,11 +590,6 @@ button:hover {
   transition-duration: 300ms;
   width: 117px;
   z-index: 999;
-}
-
-.projects-menu:hover {
-  background-color: var(--main-red);
-  color: var(--mustard);
 }
 
 .navigation-menu {
@@ -755,13 +714,6 @@ textarea:focus {
   cursor: pointer;
   transition-duration: 300ms;
   text-transform: uppercase;
-}
-
-.subscribe-bttn:hover {
-  background-color: var(--blue-blue) !important;
-  border-color: var(--blue-blue) !important;
-  color: var(--mustard) !important;
-  transition-duration: 300ms;
 }
 
 .contact-link {

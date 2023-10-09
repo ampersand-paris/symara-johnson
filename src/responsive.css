@@ -297,6 +297,14 @@
     .is-loading {
         width: calc(100vW - 150px);
     }
+
+    #symara-logo-loading {
+        width: 150px;
+    }
+
+    .image-wrapper { 
+        background-position: center;
+    }  
     
 }
 
@@ -474,5 +482,58 @@
 
     .is-loading {
         width: calc(100vW - 74px);
+    }
+
+    #symara-logo-loading {
+        width: 100px;
+    }
+}
+
+@media (hover: hover) {
+    .reel h1:hover {
+        color: var(--bright-yellow);
+        font-family: "Base Neue";
+        transition-duration: 300ms;
+    }
+
+    .watch h1:hover {
+        color: var(--bright-yellow);
+        font-family: "Base Neue";
+        transition-duration: 300ms;
+    }
+
+    .press-card:hover {
+        background-color: var(--bright-yellow);
+        border: 2px solid var(--blue-blue);
+        box-shadow: 5px 5px 5px var(--blue-blue);
+        transition-duration: 300ms;
+    }
+
+    .symara-menu:hover {
+        background-color: var(--bright-yellow);
+        color: var(--main-red);
+    }
+
+    .projects-menu:hover {
+        background-color: var(--main-red);
+        color: var(--mustard);
+    }
+    
+    .subscribe-bttn:hover {
+        background-color: var(--blue-blue) !important;
+        border-color: var(--blue-blue) !important;
+        color: var(--mustard) !important;
+        transition-duration: 300ms;
+    }
+
+    button:hover {
+        background: radial-gradient(var(--bubblegum),  rgba(255, 112, 155, 1));
+        color: var(--sand);
+        transition-duration: 300ms;
+    }
+
+    .contact-menu:hover {
+        background-color: var(--bright-yellow);
+        color: var(--acid-lime) !important;
     }
 }
