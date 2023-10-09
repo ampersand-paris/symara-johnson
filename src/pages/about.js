@@ -64,15 +64,15 @@ const About = () => {
                     </svg>
                     <div className="gradient">
                         <div className="bio-artist-statement-container">
-                                    <div className="bio-artist-statement">
-                                        <h1>{about.Name}</h1>
-                                        <p>{about.Bio}</p>
-                                        <p>{about.Artist_Statement}</p>
-                                    </div>
-                                    <div className="hidden-div">
+                                <div className="bio-artist-statement">
+                                    <h1>{about.Name}</h1>
+                                    <p>{about.Bio}</p>
+                                    <p>{about.Artist_Statement}</p>
+                                    <a className="reel" href={about.Reel} target="_blank"><h1 >REEL</h1></a>
                                 </div>
+                                <div className="hidden-div">
+                            </div>
                         </div>
-                        <iframe src={`${about.Reel}`} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                         <Footer />
                     </div>
                 </div>

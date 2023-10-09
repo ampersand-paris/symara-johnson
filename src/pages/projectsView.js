@@ -47,8 +47,9 @@ const ProjectsView = () => {
                             </div>
                             <div className="credits-container">
                                 {Object.entries(project.attributes.Credits).map((key) => 
-                                    <div>
-                                        <h4>{key[0]} <span className="creditee">{key[1]}</span></h4>
+                                    <div className="credit-card">
+                                        <h4 className="credit">{key[0]} </h4>
+                                        <h4 className="creditee">{key[1]}</h4>
                                     </div>
                                 )}
                             </div>
