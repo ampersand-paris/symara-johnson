@@ -368,7 +368,6 @@
     .about-wrapper h1, p{
         color: var(--bright-yellow);
         position: relative;
-        
     }
       
     #symara-logo {
@@ -376,6 +375,14 @@
         margin-top: 50px;
         width: 200px;
         z-index: 1;
+    }
+
+    .reel {
+        font-size: 10px;
+    }
+
+    .donate {
+        font-size: 10px;
     }
 
     /* === Projects === */
@@ -490,7 +497,14 @@
 }
 
 @media (hover: hover) {
+
     .reel h1:hover {
+        color: var(--bright-yellow);
+        font-family: "Base Neue";
+        transition-duration: 300ms;
+    }
+
+    .donate h1:hover {
         color: var(--bright-yellow);
         font-family: "Base Neue";
         transition-duration: 300ms;

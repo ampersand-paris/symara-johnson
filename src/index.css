@@ -450,13 +450,26 @@ button {
 .reel {
   display: inline-block;
   text-decoration: none;
-  
+}
+
+.donate {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .reel h1 {
   color: var(--main-red);
   font-family: "Base Neue";
   font-size: 5em;
+  margin-bottom: 0px;
+  transition-duration: 300ms;
+}
+
+.donate h1 {
+  color: var(--main-red);
+  font-family: "Base Neue";
+  font-size: 5em;
+  margin-top: 10px;
   transition-duration: 300ms;
 }
 
@@ -740,4 +753,9 @@ iframe {
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   width: 300px;
+}
+
+.about-links {
+  display: flex;
+  flex-direction: column;
 }

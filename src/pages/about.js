@@ -68,7 +68,10 @@ const About = () => {
                                     <h1>{about.Name}</h1>
                                     <p>{about.Bio}</p>
                                     <p>{about.Artist_Statement}</p>
-                                    <a className="reel" href={about.Reel} target="_blank"><h1 >REEL</h1></a>
+                                    <div className="about-links">
+                                        <a className="reel" href={about.Reel} target="_blank"><h1 >REEL</h1></a>
+                                        <a className="donate" href="https://newyorklivearts.my.salesforce-sites.com/donate/?dfId=a0n3q00000ZUsckAAD" target="_blank"><h1>DONATE</h1></a>
+                                    </div>
                                 </div>
                                 <div className="hidden-div">
                             </div>
