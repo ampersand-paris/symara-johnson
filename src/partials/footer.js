@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <MailchimpFormContainer />
-            <p>Designed and Developed by <a href="www.failspacenyc.com">FAILSPACE Design Services</a></p>
+            <p>Designed and Developed by <a href="https://failspacenyc.com/" target="_blank">FAILSPACE</a></p>
         </div>
     )
 }
