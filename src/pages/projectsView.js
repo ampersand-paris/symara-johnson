@@ -11,7 +11,7 @@ import IsLoading from "../partials/isLoading";
 
 const ProjectsView = () => {
 
-    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/projects?populate=*`)
+    const { isLoading, error, data } = useFetch(`${process.env.REACT_APP_BACKEND}/api/projects?sort=Year:desc&[populate]=*`)
 
     let projects = [];
 

@@ -490,7 +490,7 @@ button {
 }
 
 .project {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   position: relative;
 }
 

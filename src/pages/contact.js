@@ -195,7 +195,7 @@ const Contact = () => {
                 <Footer />     
             </div>        
         )
-    }
+    }    
     
 }
 
