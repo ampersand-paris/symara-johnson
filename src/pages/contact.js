@@ -52,7 +52,7 @@ const Contact = () => {
             let resJson = await res.json();
             if (res.status === 200) {
                 setSubmit(true)
-                emailjs.sendForm('service_tvyv7ti', 'template_ybrki3c', form.current, 'MoPHDEda7IpsbXyKR')
+                emailjs.sendForm('service_ng7b2fi', 'template_ybrki3c', form.current, 'MoPHDEda7IpsbXyKR')
                     .then((result) => {
                         console.log('result', result.text);
                     }, (error) => {
